@@ -1,0 +1,47 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.conteudo-centralizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mensagem {
+  font-size: 2em; /* Tamanho da fonte grande conforme solicitado */
+  animation: blinkingText 5s infinite;
+}
+
+#contador {
+  font-size: 4em;
+  margin: 20px 0;
+}
+
+.botao {
+  display: none; /* O botão é ocultado inicialmente */
+  font-size: 1em;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+@keyframes blinkingText {
+  50% { opacity: 0; }
+}
